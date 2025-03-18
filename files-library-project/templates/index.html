@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Library{% endblock %}
+{% block content %}
+    <h1>My Library</h1>
+    <ul>
+      {% for book in all_books %}
+      <li>
+          <a href="{{url_for('delete',book_id=book.id)}}">Deleting</a>
+        {{book['title']}}-{{book['author']}}-{{book['rating']}}
+         <a href="{{url_for('edit',book_id=book.id)}}">Edit Rating</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="{{url_for('add')}}">Add New Book</a>
+{% endblock %}

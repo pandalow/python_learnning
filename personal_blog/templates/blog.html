@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for article in blog:%}
+    <h1>{{article.title}}</h1>
+    <h2>{{article.subtitle}}</h2>
+    <p>{{article.body}}</p>
+    {% endfor %}
+</body>
+<footer>
+    Copyright {{current_year}}, Build By {{name}}
+</footer>
+</html>

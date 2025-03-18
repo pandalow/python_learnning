@@ -1,0 +1,6 @@
+{%extends 'base.html'%}
+{% from 'bootstrap/form.html' import render_form %}
+  {% block title %}Add Book{% endblock %}
+{% block content%}
+    {{render_form(form)}}
+{% endblock%}

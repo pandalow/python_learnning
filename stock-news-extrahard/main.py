@@ -18,7 +18,6 @@ parameters = {
     "data": "json"
 }
 news_parameters = {
-    # q=bitcoin&apiKey=e44a694cc77e469e9ec6ff7bb7e14f3a
     "q": COMPANY_NAME,
     "from": day_before_yesterday,
     "to": yesterday,
